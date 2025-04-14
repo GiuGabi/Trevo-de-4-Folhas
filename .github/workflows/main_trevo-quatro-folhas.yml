@@ -65,4 +65,4 @@ jobs:
           app-name: 'Trevo-quatro-folhas'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EC9048C43DD44D0283BBA690C246DBAB }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0EC405D2FF9E4561A83A4F280C1777EF }}
