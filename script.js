@@ -5,23 +5,6 @@ menu.onclick = () => {
   menu.classList.toggle('fa-times');
   navbar.classList.toggle('active');
 };
-
-// Fecha menu ao rolar
-window.onscroll = () => {
-  menu.classList.remove('fa-times');
-  navbar.classList.remove('active');
-};
-
-ScrollReveal({ 
-    reset: true,
-    distance: '60px',
-    duration: 2000,
-    delay: 200 
-  });
-  
-  ScrollReveal().reveal('.home .content, .heading', { origin: 'top' });
-  ScrollReveal().reveal('.home .image, .btn', { origin: 'bottom' });
-  ScrollReveal().reveal('.sobre-nos, .membros-container, .atividade-grid', { origin: 'right' });
   
 
 // Swiper carrossel: Projeto
