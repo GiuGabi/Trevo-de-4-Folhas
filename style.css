@@ -198,6 +198,7 @@ html, body {
   }
 
 
+
 /* Home */
 .home {
     padding: 10rem 12%;
@@ -513,7 +514,7 @@ html, body {
 /* Rodapé - Contato */
 /* Contato */
 .rodape {
-    background-color: #00704A; 
+    background-color: black; 
     color: #ffffff;
     padding: 3rem 2rem;
     text-align: center;
@@ -523,6 +524,10 @@ html, body {
     font-size: 1.8rem;
     margin-bottom: 2rem;
     color: #ffffff;
+  }
+
+  .titulo-rodape .verde {
+  color: #00ff00;
   }
   
   .integrantes-container {
@@ -551,9 +556,142 @@ html, body {
     color: #1abc9c; 
   }
   
-  .instituicao {
-    font-size: 1rem;
-    font-style: italic;
-    color: #dddddd;
-  }
+.logos-container {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.logo-senac {
+  max-width: 40px; 
+  height: auto;
+}
+
+  .instituicao a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: 0.3s ease;
+}
+
+.instituicao a:hover {
+  color: var(--main-color);
+  border-bottom: 3px solid var(--main-color);
+}
   
+
+
+
+
+
+/* Responsivo */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  header,
+  .header {
+    padding: 3rem 6%;
+  }
+
+  .home {
+    padding: 10rem 6%;
+  }
+
+  .projeto,
+  .sobre-nos,
+  .atividades {
+    padding: 6rem 6%;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    padding: 2rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .navbar a {
+    margin: 1.5rem 0;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .navbar.show {
+    display: flex;
+  }
+
+  .home .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home .content {
+    flex: 1 1 100%;
+  }
+
+  .home .image {
+    flex: 1 1 100%;
+  }
+
+  .membros-container,
+  .atividade-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .membros-container,
+  .atividade-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 2.2rem;
+  }
+
+  .logo-img {
+    width: 35px;
+  }
+
+  .home .content h1 {
+    font-size: 4.5rem;
+  }
+
+  .home .content p,
+  .descricao-projeto,
+  .sobre-descricao,
+  .descricao-atividades {
+    font-size: 1.6rem;
+  }
+
+  .card-inner,
+  .membro {
+    width: 100%;
+  }
+}
+

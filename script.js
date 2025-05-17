@@ -22,20 +22,4 @@ const swiper = new Swiper('.projeto-swiper', {
     spaceBetween: 30,
   });
   
-  //Desaparecer header
-  let lastScrollTop = 0;
-const header = document.querySelector('.header');
-
-window.addEventListener('scroll', () => {
-  let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-
-  if (currentScroll > lastScrollTop) {
-
-    header.classList.add('hide');
-  } else {
-
-    header.classList.remove('hide');
-  }
-
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-});
+ 
