@@ -3,7 +3,7 @@
 
 /* Variáveis */
 :root {
-  --green: #00ff51;
+  --green: #32CD30;
   --white: #fff;
   --light-white: #aaa;
   --black: #080808;
@@ -11,7 +11,7 @@
   --bg-color: #080808;
   --second-bg-color: #001005;
   --text-color: white;
-  --main-color: #00ff51;
+  --main-color: #32CD30;
 }
 
 * {
@@ -41,7 +41,7 @@
     background-color: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background-color:  #023111;
+    background-color:  var(--green);
     border-radius: 5rem;
   }
 
