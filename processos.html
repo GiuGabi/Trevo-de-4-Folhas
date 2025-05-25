@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trevo de 4 Folhas</title>
+  <link rel="icon" type="image/png" href="Home/favicon.ico.png">
+
+
+  <!-- Fonte: Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- link CSS -->
+  <link rel="stylesheet" href="processos.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="Home/logonavbar.png.png" alt="Logo" class="logo-img">
+    </div>
+    <i id="menu-btn" class="fas fa-bars"></i>
+    <nav class="navbar">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#projeto">Projeto</a>
+      <a href="index.html#sobre">Sobre Nós</a>
+      <a href="#processos ">Processos</a>
+      <a href="index.html#atividades">Atividades</a>
+      <a href="index.html#contato">Contato</a>
+
+      
+    </nav>
+  </header>
+
+
+<!-- Processos -->
+<section class="processos" id="processos">
+  <div class="row">
+    <div class="content">
+      <h1><span>Nossos</span> <br> Processos</h1>
+      <div class="descricao-e-botoes">
+      <p>Um pouco sobre os processos de criação da cerveja.</p>
+      <div class="navegacao-secoes">
+  <button onclick="document.getElementById('producao').scrollIntoView({ behavior: 'smooth' })">Produção</button>
+  <button onclick="document.getElementById('sistema').scrollIntoView({ behavior: 'smooth' })">Sistema Temperatura</button>
+  <button onclick="document.getElementById('implem').scrollIntoView({ behavior: 'smooth' })">Relé</button>
+</div>
+</div>
+
+    </div>
+    
+    <div class="image">
+      <img src="Processos/Processos01.jpeg" alt="Imagem Trevo">
+    </div>
+  </div>
+</section>
+
+<!--Processo de Produção -->
+<section class="producao" id="producao">
+<div class="row">
+    <div class="content">
+    <h1><span>Processo</span> de Produção</h1>
+
+     <img src="Processos/processos1.1.jpeg" alt="Imagem 1.1" class="imagem-1.1"/>
+
+      <p>A cerveja produzida corresponde ao estilo <strong>Blond Ale</strong>. O processo de fabricação foi iniciado com a adição de 4,7 litros de água à panela de mostura, sendo que a fonte de calor utilizada foi o fogão, devidamente ajustado para possibilitar o aquecimento gradual e controlado da água.</p>
+
+      <p>Em seguida, o sistema de controle de temperatura, composto pelo Arduino e pelo sensor LM35, foi acionado, de modo que pudesse monitorar continuamente a evolução térmica do processo. Esse sistema foi calibrado para sinalizar assim que a água atingisse o primeiro patamar de 42 °C, garantindo, assim, a precisão térmica necessária para a correta condução da etapa subsequente.</p>
+
+      <p>Tão logo a temperatura da água alcançou 42 °C, procedeu-se ao registro do tempo exato em que esse patamar foi atingido e, imediatamente após, realizou-se a adição do saco de brassagem. Neste momento, foram inseridos os seguintes grãos: <strong>Malte Pilsen (0,65 kg), Malte Cara Pils (0,07 kg), Malte Melanoidina (0,05 kg)</strong> e <strong>Flocos de Aveia (0,05 kg)</strong>. Esta primeira rampa foi mantida por 10 minutos, assegurando a estabilização da temperatura em 42 °C e favorecendo o início das reações enzimáticas pertinentes.</p>
+
+      <p>Posteriormente, ajustou-se novamente a fonte de calor para promover a elevação da temperatura até 50 °C, sendo que o sistema de controle indicou, em tempo real, quando esse novo patamar foi atingido. Durante esse processo, a mistura foi constantemente mexida, a fim de evitar que os grãos se depositassem e aderissem ao fundo da panela, o que poderia comprometer tanto a eficiência da extração quanto a qualidade sensorial da cerveja. Assim que a temperatura alcançou 50 °C, efetuou-se o devido registro do horário.</p>
+
+      <p>Na sequência, manteve-se a mistura nesta faixa de temperatura por 10 minutos e, ao término deste período, procedeu-se ao ajuste da fonte de calor, elevando-se gradativamente a temperatura até 66 °C. O momento em que esse patamar foi atingido também foi devidamente registrado. A mistura permaneceu a 66 °C por 60 minutos, sendo cuidadosamente mexida ao longo de todo o período, com o intuito de assegurar a homogeneização e a máxima eficiência do processo. Esta etapa prolongada visou à conversão enzimática dos açúcares, cuja conclusão foi confirmada mediante a realização do teste de iodo, que indicou a completa conversão do amido em açúcares fermentáveis.</p>
+
+      <p>Subsequentemente, realizou-se a elevação da temperatura até 78 °C (<em>mash out</em>), mantida por 10 minutos, com o objetivo de promover a inativação enzimática e facilitar a etapa de clarificação do mosto. O tempo no qual se atingiu 78 °C foi igualmente registrado.</p>
+
+      <p>Concluída a etapa de mostura, procedeu-se à separação do mosto em relação aos grãos por meio de filtragem manual, realizada com a renovação do saco de brassagem, restando-se, ao final, apenas o líquido na panela, livre de sólidos em suspensão.</p>
+
+      <p>Na sequência, o processo avançou para a etapa de fervura, a qual foi conduzida por 60 minutos, até que a mistura atingisse 100 °C. Após 10 minutos de fervura, realizou-se a adição do lúpulo <strong>Tettnang (8 g)</strong>, permanecendo este na mistura pelos 50 minutos subsequentes, conferindo à cerveja as características desejadas de amargor e aroma.</p>
+
+      <p>Adicionalmente, aos 45 minutos de fervura, foi adicionado <strong>açúcar de cana (0,075 kg)</strong>, contribuindo para o ajuste da densidade e potencial alcoólico da cerveja. Nos últimos 5 minutos da fervura, foram incorporados os adjuntos aromáticos, consistindo em <strong>casca de laranja Bahia (3 g)</strong>, cuidadosamente preparada, com a remoção da parte branca (albedo), a fim de evitar sabores indesejáveis, e <strong>semente de coentro moída (2 g)</strong>, agregando complexidade e notas aromáticas específicas à bebida.</p>
+
+      <p>Concluída a fervura, procedeu-se à etapa de resfriamento rápido do mosto até 20 °C, utilizando-se um chiller de imersão, enquanto a temperatura foi monitorada pelo sistema, ainda que sem a atuação automática sobre o controle térmico nesta fase.</p>
+
+      <p>O mosto resfriado foi então transferido para o fermentador, onde se realizou a inoculação do fermento <strong>SafAle S-33 (2,5 g)</strong>. A fermentação foi conduzida a uma temperatura controlada de 20 °C, monitorada pelo sistema, porém, novamente, sem atuação ativa sobre o controle térmico nesta etapa.</p>
+
+      <p>Após o término da fermentação, procedeu-se ao envase, com a adição de <strong>priming na proporção de 3 g/L de açúcar</strong>, conforme as boas práticas de carbonatação natural, visando garantir a formação adequada de CO₂ na cerveja final.</p>
+
+      <p>Cabe ressaltar que, durante todo o processo, a densidade do mosto foi sistematicamente monitorada, visando a correção necessária para que se alcançasse a <strong>OG (Original Gravity) pré-fervura de 1,047</strong>, conforme os parâmetros estabelecidos para o estilo Blond Ale.</p>
+   
+    <img src="Processos/processos1.2.jpeg" alt="Imagem 1.2" class="imagem-1.2" />
+    </div>
+  </div>
+</section>
+
+ <!--Sistema Controlador de Temperatura -->
+<section class="sistema"  id="sistema">
+<div class="row">
+    <div class="content">
+    <h1><span>Sistema Controlador</span> de Temperatura</h1>
+
+        <p>Para que o processo de preparação da cerveja artesanal proposto neste projeto se dê de maneira satisfatória, é essencial a realização de um controle preciso da temperatura, especialmente no que tange a etapa de fervura, a fim de garantir que a qualidade final da bebida seja ótima. Nesse sentido, o sistema elaborado contou com um sistema integrado entre Hardware e Software, com o uso de um microcontrolador Arduíno UNO para realizar o monitoramento e o controle da temperatura de forma automatizada.</p>
+
+
+    <div class="imagens">
+     <img src="Processos/processos2.1.jpeg" alt="Imagem do sistema 1">
+     <img src="Processos/processos2.2.jpeg" alt="Imagem do sistema 2">
+    </div>
+
+     
+      <h2>Hardware</h2>
+
+      <p>O sistema de controle térmico desenvolvido visou automatizar e estabilizar a etapa de fervura da cerveja. Para isso, foi projetado um circuito que possibilitou o monitoramento preciso da temperatura e o acionamento proporcional do sistema de aquecimento.</p>
+
+      <p>A medição da temperatura foi realizada por um sensor <strong>LM35</strong>, selecionado por sua linearidade, precisão e facilidade de interface com microcontroladores. Esse sensor analógico fornece uma saída de 10 mV por grau Celsius e foi instalado em um tubo de cobre posicionado no interior da panela de fervura, assegurando o contato direto com o líquido. O sinal do sensor é conectado ao pino analógico A2 do microcontrolador <strong>Arduino UNO</strong>, que executa a conversão dos dados analógicos para valores digitais de temperatura.</p>
+
+      <p>Para o controle do aquecimento, empregou-se uma resistência elétrica alimentada pela rede de 220 V, cujo acionamento é realizado por um <strong>TRIAC BTA41-600B</strong>. Visando garantir o isolamento elétrico entre os circuitos de potência e controle, o disparo do TRIAC é feito por meio de um <strong>optoacoplador MOC3021</strong>. A detecção do cruzamento por zero da tensão alternada, fundamental para o controle por ângulo de fase, é realizada por um segundo optoacoplador, o <strong>4N25</strong>, conectado a uma interrupção externa no pino digital 3 do Arduino.</p>
+
+      <p>Complementam o sistema os botões físicos para ajuste da temperatura de referência (setpoint), um <strong>display LCD 16x2 com módulo I2C</strong> para exibição das variáveis monitoradas, e um <strong>dissipador de calor</strong> em alumínio acoplado ao TRIAC, garantindo a segurança térmica do componente durante o funcionamento contínuo.</p>
+
+      <h2>Software</h2>
+
+      <p>O código no microcontrolador Arduino UNO foi desenvolvido na linguagem <strong>C/C++</strong>, sendo responsável pela aquisição de dados, processamento das variáveis, controle da potência de aquecimento e interação com o usuário.</p>
+
+      <p>A função <code>GetTemp()</code> realiza a leitura da temperatura com base no sinal analógico fornecido pelo sensor LM35. Para garantir a estabilidade da leitura e mitigar os efeitos de ruídos, o algoritmo realiza múltiplas amostragens consecutivas, calculando a média aritmética dos valores obtidos. A conversão do valor de tensão para temperatura é feita considerando a escala de 10 mV/°C característica do sensor.</p>
+
+      <p>O ajuste do valor de referência (setpoint) é implementado por meio da função <code>ajuste_setpoint()</code>, que interpreta os sinais de dois botões conectados aos pinos digitais 8 e 9 do Arduino. Para evitar múltiplas leituras indesejadas causadas por oscilações mecânicas (efeito bouncing), foi utilizado um algoritmo de debounce baseado na função <code>millis()</code>.</p>
+
+      <p>O controle da potência aplicada à resistência é realizado pela função <code>zero_crosss_int()</code>, acionada por interrupção externa a cada cruzamento por zero da rede elétrica. Essa técnica permite o controle de fase do TRIAC, ajustando o instante de disparo dentro de cada semiciclo da onda senoidal. O tempo de atraso entre o cruzamento por zero e o acionamento do TRIAC é calculado com base no erro entre a temperatura atual e o setpoint, sendo armazenado na variável <code>power</code>.</p>
+
+      <p>O algoritmo de controle adotado contempla duas abordagens: o <strong>controle proporcional segmentado</strong> e um modelo simplificado de <strong>controle PID (Proporcional-Integral-Derivativo)</strong>. Na primeira abordagem, o valor do erro determina a faixa de potência aplicada, enquanto na segunda considera-se, além do erro atual, sua tendência e histórico, o que proporciona maior estabilidade e menor oscilação na temperatura do sistema.</p>
+
+      <p>A interface com o operador é realizada por meio de um display LCD 16x2, que exibe continuamente os valores da temperatura medida (Ta), do setpoint configurado (Ts) e da potência aplicada à resistência (Power). O símbolo de grau Celsius é representado no visor com o código ASCII correspondente via <code>lcd.write(223)</code>.</p>
+
+      <h2> Integração Software e Hardware</h2>
+
+      <p>A integração entre os componentes de hardware e o sistema de software foi essencial para a automatização eficiente do processo de fervura. O sensor LM35, acoplado ao tubo de cobre, fornece leituras contínuas da temperatura do líquido, que são adquiridas e processadas pelo Arduino UNO. O algoritmo embarcado trata essas informações com filtragem e média de amostragens, garantindo confiabilidade nas leituras.</p>
+
+      <p>Com base na diferença entre a temperatura atual e o setpoint configurado, o sistema calcula a potência necessária para o aquecimento, ajustando o instante de disparo do TRIAC dentro de cada semiciclo da rede alternada. Esse processo de controle por ângulo de fase, sincronizado com o cruzamento por zero, permite a modulação contínua da potência de forma segura, precisa e isolada eletricamente.</p>
+
+      <p>A comunicação entre o usuário e o sistema é feita por meio de uma interface simples e direta, composta por botões de ajuste e um display LCD. Essa interface permite o acompanhamento em tempo real do processo e ajustes dinâmicos durante a fervura.</p>
+
+      <p>Portanto, a integração do sistema proporciona uma solução robusta, acessível e de baixo custo para o controle térmico em processos de produção de cerveja artesanal, permitindo sua aplicação tanto em ambientes acadêmicos quanto em pequenos empreendimentos.</p>
+   
+     <div class="imagens">
+     <img src="Processos/processos2.3.jpeg" alt="Imagem 1.2" />
+    </div>
+   
+    </div>
+  </div>
+</section>
+</section>
+
+
+  <!--Implementação Alternativa com Relé -->
+<section class="implem"  id="implem">
+<div class="row">
+    <div class="content">
+    <h1><span>Implementação Alternativa </span> com Relé</h1>
+     <p>
+        Conforme descrito nos tópicos anteriores, durante o desenvolvimento do sistema de controle de temperatura, foi inicialmente projetado um circuito de acionamento baseado na utilização do <strong>optoacoplador MOC3021</strong>, associado ao <strong>TRIAC BTA41-600B</strong>, para a realização da comutação da carga resistiva de aquecimento.
+      </p>
+
+      <p>
+        Entretanto, durante a fase de testes, foram observadas falhas recorrentes na estabilização do sensor de temperatura, comprometendo a precisão e a confiabilidade do sistema. Diante dessas dificuldades práticas e com o intuito de simplificar a implementação, bem como de assegurar a correta operação do sistema, optou-se pela substituição do conjunto optoacoplador-TRIAC por um <strong>relé de estado sólido (SSR)</strong>, com controle de 5 V DC e capacidade de comutação de até 10 A em 220 V AC.
+      </p>
+
+      <p>
+        Esta modificação permitiu uma interface direta e segura com o <strong>Arduino</strong>, que opera com sinais de controle de 5 V, garantindo o acionamento preciso da resistência elétrica sem a necessidade de circuitos adicionais de disparo ou proteção (<em>snubber</em>).
+      </p>
+
+      <p>
+        Essa modificação resultou em um sistema mais <strong>robusto</strong>, <strong>confiável</strong> e de <strong>fácil manutenção</strong>, assegurando a estabilidade térmica necessária para a condução adequada das diversas etapas do processo cervejeiro, tais como <em>mostura</em>, <em>fervura</em> e <em>resfriamento</em>.
+      </p>
+    </div>
+     <div class="imagens">
+     <img src="Processos/processos3.1.jpeg" alt="Imagem 1.2" />
+    </div>
+  </div>
+</section>
+
+<!-- Rodapé: Contato -->
+ <hr class="divisoria-contato">
+<footer id="contato" class="rodape">
+  <h1 class="titulo-rodape"><span class="verde">Contato</span></h1>
+  
+    <div class="integrantes-container">
+      <a href="https://www.linkedin.com/in/fernanda-rodrigues-nascimento?" target="_blank">
+        <i class="fab fa-linkedin"></i> Fernanda Rodrigues
+      </a>
+      <a href="https://www.linkedin.com/in/giulia-gabriela-silva-de-freitas-986679239?" target="_blank">
+        <i class="fab fa-linkedin"></i> Giulia Gabriela
+      </a>
+      <a href="https://www.linkedin.com/in/mariana-kanashiro-sato?" target="_blank">
+        <i class="fab fa-linkedin"></i> Mariana Sato
+      </a>
+      <a href="https://www.linkedin.com/in/matheus-taqueushi-58900a289/" target="_blank">
+        <i class="fab fa-linkedin"></i> Matheus Taqueushi
+      </a>
+      <a href="https://www.linkedin.com/in/pablo-santos-vargas?" target="_blank">
+        <i class="fab fa-linkedin"></i> Pablo Vargas
+      </a>
+      <a href="https://br.linkedin.com/in/sarah-moura-924756323" target="_blank">
+        <i class="fab fa-linkedin"></i> Sarah Moura
+      </a>
+    </div>
+  
+   <div class="logos-container">
+    <img src="Contato/logo-senac.png.png" alt="Logo Senac" class="logo-senac">
+     <img src="Contato/logo-grupo.png.png" alt="Logo do Grupo" class="logo-grupo">
+  </div>
+
+  <p class="instituicao">
+  <a href="https://www.sp.senac.br" target="_blank">Centro Universitário Senac</a>
+  </p>
+</footer>
+
+<script>
+  const menuBtn = document.querySelector('#menu-btn');
+  const navbar = document.querySelector('.navbar');
+
+  menuBtn.onclick = () => {
+    navbar.classList.toggle('active');
+  };
+</script>
+
+</body>

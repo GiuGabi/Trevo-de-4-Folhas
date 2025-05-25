@@ -1,0 +1,737 @@
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Variáveis */
+:root {
+  --green: #d4b349;
+  --white: #fff;
+  --light-white: #aaa;
+  --black: #080808;
+  --light-bg: #001005;
+  --bg-color: #080808;
+  --second-bg-color: #001005;
+  --text-color: white;
+  --main-color: #d4b349;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    transition: 0.2s linear;
+  }
+
+  *::selection {
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+
+  /* Scrollbar */
+::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 1rem;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 5rem;
+  }
+
+/* Html e Body */
+/* divisao seções */
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 8rem;
+  }
+
+  body {
+    background-color: var(--black);
+    color: var(--text-color);
+    display: block;
+    width: 100vw;
+    max-width: 100%;
+  }
+
+
+  
+  /* Títulos */
+  .heading,
+  .heading-central,
+  .heading-left {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--white);
+    margin-bottom: 2.5rem;
+  }
+  
+  .heading span,
+  .heading-central span,
+  .titulo-projeto,
+  .titulo-principal span,
+  .titulo-integrantes span,
+  .heading-left span {
+    color: var(--main-color);
+  }
+  
+  /* Header */
+ header,
+  .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding:  2rem 12%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.header.hide {
+  transform: translateY(-100%); 
+}
+  
+
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 60px;
+    margin-right: 5px;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: var(--text-color);
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+#menu-btn {
+  display: none;
+}
+
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar a {
+    font-size: 1.8rem;
+    color: var(--light-white);
+    margin-left: 4rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+  }
+
+/* Processos */
+.processos {
+  padding: 10rem 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.processos .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+
+.processos .content {
+  flex: 1 1 50%;
+  text-align: left;
+}
+
+.processos .content h1 {
+  font-size: 6.5rem;
+  color: var(--white);
+  line-height: 1.1;
+}
+
+.processos .content h1 span {
+  color: var(--green);
+}
+
+.processos .content p {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: var(--light-white);
+  max-width: 90%;
+}
+
+.processos .image {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.processos .image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 20px;
+  transition: 0.4s ease-in-out;
+}
+
+.descricao-e-botoes {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  color: var(--white); /* corrigido de font-color para color */
+}
+
+.navegacao-secoes {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-start; 
+  flex-wrap: wrap;
+}
+
+.navegacao-secoes button {
+  padding: 1.2rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: black;
+  color: white; 
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px var(--green);
+}
+
+.navegacao-secoes button:hover {
+  background-color: var(--green);
+  color: var(--black);
+  box-shadow: 0 0 18px 4px rgba(208, 180, 20, 0.35);
+  transform: translateY(-2px);
+}
+
+
+
+
+
+
+/* Processo de produção */
+.producao {
+  padding: 8rem 12%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.producao h1 {
+  font-size: 4rem;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.producao .content h1 span {
+  color: var(--green);
+}
+
+.producao .text-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.producao p {
+     margin-top: 3rem;
+     margin-bottom: 1.5rem;
+     text-align: justify;
+     font-size: 1.8rem;
+     color: #e0e0e0;
+     line-height: 1.8;
+}
+
+.producao strong {
+  color: var(--green);
+}
+
+.producao em {
+  font-style: italic;
+  color: #a5a5a5;
+}
+
+
+.producao img {
+  display: block;
+  margin: 2rem auto; 
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.05) contrast(1.05);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.producao img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15) contrast(1.1);
+}
+
+
+/* Sistema controlador de temperatura */
+.sistema {
+  padding: 8rem 12%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.sistema h1 {
+  font-size: 4rem;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sistema .content h1 span {
+  color: var(--green);
+}
+
+.sistema .text-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.sistema p {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  font-size: 1.8rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+.sistema strong {
+  color: var(--green);
+}
+
+.sistema em {
+  font-style: italic;
+  color: #a5a5a5;
+}
+
+.sistema .imagens {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.sistema .imagens img {
+  max-width: 90%;
+  width: 45%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.05) contrast(1.05);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.sistema .imagens img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15) contrast(1.1);
+}
+
+
+.sistema h2 {
+  font-size: 2.8rem; 
+  color: var(--green);
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* Implementação Alternativa com Relé */
+.implem {
+  padding: 8rem 12%;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  gap: 2rem;
+}
+
+.implem h1 {
+  font-size: 4rem;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.implem .content h1 span {
+  color: var(--green);
+}
+
+.implem .text-content {
+  flex: 2;
+  min-width: 300px;
+}
+
+.implem p {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  font-size: 1.8rem;
+  color: #e0e0e0;
+  line-height: 1.8;
+}
+
+.implem strong {
+  color: var(--green);
+}
+
+.implem em {
+  font-style: italic;
+  color: #a5a5a5;
+}
+
+.implem .imagens {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.implem .imagens img {
+  max-width: 90%;
+  width: 45%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.05) contrast(1.05);
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.implem .imagens img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.15) contrast(1.1);
+}
+
+.implem h2 {
+  font-size: 2.8rem; 
+  color: var(--green);
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+/* Rodapé - Contato */
+.divisoria-contato {
+  border: none;
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right, transparent, var(--green), transparent);
+  margin: 0;
+}
+
+.rodape {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.titulo-rodape {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.titulo-rodape .verde {
+  color: var(--green);
+}
+
+.integrantes-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.integrantes-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.integrantes-container a i {
+  font-size: 1.6rem;
+  color: var(--green);
+  transition: color 0.3s;
+}
+
+.integrantes-container a:hover {
+  border-color: var(--green);
+  background-color: var(--green);
+  color: #000000;
+}
+
+.integrantes-container a:hover i {
+  color: #000000;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.logo-senac,
+.logo-grupo {
+  max-width: 60px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-senac:hover,
+.logo-grupo:hover {
+  transform: scale(1.1);
+}
+
+.instituicao {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.instituicao a {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.instituicao a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: var(--green);
+  transition: width 0.3s ease;
+}
+
+.instituicao a:hover {
+  color: var(--green);
+}
+
+.instituicao a:hover::after {
+  width: 100%;
+}
+
+
+/* Responsivo */
+@media (max-width: 991px) {
+  header, .header {
+    padding: 2rem 5%;
+  }
+
+  .navbar a {
+    margin-left: 2rem;
+    font-size: 1.6rem;
+  }
+
+  .processos,
+  .producao,
+  .sistema,
+  .implem {
+    padding: 8rem 5%;
+  }
+
+  .processos .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .processos .content,
+  .processos .image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .processos .content h1 {
+    font-size: 5rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  #menu-btn {
+    display: block;
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--black);
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  .processos .content h1 {
+    font-size: 4rem;
+  }
+
+  .navegacao-secoes {
+    justify-content: center;
+  }
+
+  .navegacao-secoes button {
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  html {
+    font-size: 55%;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .logo-img {
+    width: 40px;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .processos .content h1 {
+    font-size: 3.2rem;
+  }
+
+  .processos .content p,
+  .producao p,
+  .sistema p,
+  .implem p {
+    font-size: 1.6rem;
+  }
+
+  .navegacao-secoes button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .rodape {
+    padding: 3rem 1rem;
+  }
+
+  .titulo-rodape {
+    font-size: 2rem;
+  }
+
+  .integrantes-container a {
+    font-size: 1rem;
+  }
+
+  .logo-senac,
+  .logo-grupo {
+    max-width: 45px;
+  }
+}
+
