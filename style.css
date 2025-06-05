@@ -3,7 +3,7 @@
 
 /* Variáveis */
 :root {
-  --green: #32CD30;
+  --green: #1c7d1b;
   --white: #fff;
   --light-white: #aaa;
   --black: #080808;
@@ -11,7 +11,7 @@
   --bg-color: #080808;
   --second-bg-color: #001005;
   --text-color: white;
-  --main-color: #32CD30;
+  --main-color: #1c7d1b;
 }
 
 * {
@@ -583,7 +583,7 @@ html, body {
 }
 
 .titulo-rodape .verde {
-  color: #00ff51;
+  color: #32CD30;
 }
 
 .integrantes-container {
