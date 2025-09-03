@@ -32,7 +32,7 @@ Projeto de um site responsivo feito com HTML, CSS e JavaScript, apresentando inf
 ## 📚 Integrantes
 
 - Fernanda Rodrigues
-- Giulia Gabriela
+- GGiulia Gabriela
 - Mariana Sato
 - Matheus Taqueushi
 - Pablo Vargas
